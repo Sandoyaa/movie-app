@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(ls:*)",
-      "Bash(npx prettier:*)"
+      "Bash(npx prettier:*)",
+      "Bash(git -C /c/Users/serge/WebstormProjects/movie-app log --oneline -10)",
+      "Bash(git rm:*)"
     ]
   }
 }
