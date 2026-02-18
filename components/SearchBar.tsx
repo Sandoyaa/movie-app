@@ -4,7 +4,7 @@ import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native'
 import { icons } from '@/constants/icons'
 
 interface Props {
-	placeholder?: string
+	placeholder: string
 	onPress?: () => void
 	value?: string
 	onChangeText?: (text: string) => void
