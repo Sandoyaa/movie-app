@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98c45b35-54b5-462b-9ec2-8f16cab57acb" name="Changes" comment="feat(Movie detail page)">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="98c45b35-54b5-462b-9ec2-8f16cab57acb" name="Changes" comment="feat(Profile page, saved page): init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/profile.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/profile.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(tabs)/saved.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(tabs)/saved.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +120,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.30387.83" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.31033.133" />
       </set>
     </attachedChunks>
   </component>
@@ -149,6 +146,12 @@
       <workItem from="1771395246243" duration="3968000" />
       <workItem from="1771399513031" duration="1293000" />
       <workItem from="1771409095724" duration="5441000" />
+      <workItem from="1771422725267" duration="312000" />
+      <workItem from="1771423569436" duration="405000" />
+      <workItem from="1771425641438" duration="652000" />
+      <workItem from="1771446847465" duration="701000" />
+      <workItem from="1771482370260" duration="439000" />
+      <workItem from="1771665843789" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -190,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771413857954</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat(Profile page, saved page): init">
+      <option name="closed" value="true" />
+      <created>1771422759354</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1771422759354</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +224,7 @@
     <MESSAGE value="feat(Search)" />
     <MESSAGE value="feat(Appwrite): init and search counting" />
     <MESSAGE value="feat(Movie detail page)" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(Movie detail page)" />
+    <MESSAGE value="feat(Profile page, saved page): init" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(Profile page, saved page): init" />
   </component>
 </project>

@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+# Movie Discovery Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern movie discovery mobile application built with React Native, Expo SDK 54, and TMDB API.
 
-## Get started
+## Tech Stack
 
-1. Install dependencies
+| Layer | Technology |
+|---|---|
+| **Framework** | React Native + Expo SDK 54 |
+| **Navigation** | Expo Router (file-based, Stack + Bottom Tabs) |
+| **Styling** | NativeWind v4 (Tailwind CSS for React Native) |
+| **Data Source** | TMDB API (The Movie Database) |
+| **Backend** | Appwrite (trending search tracking) |
+| **Data Fetching** | Custom `useFetch` hook |
+| **Language** | TypeScript 5.9 |
 
-   ```bash
-   npm install
-   ```
+## Implemented Screens and Features
 
-2. Start the app
+- **Home tab** — Popular movies list with poster grid, ratings, and loading/error states
+- **Search tab** — Movie search with trending queries tracked via Appwrite
+- **Saved tab** — Saved movies collection
+- **Profile tab** — User profile page
+- **Movie Detail screen** — Full movie page with poster, overview, genres, budget, revenue, runtime, and production companies
 
-   ```bash
-   npx expo start
-   ```
+## Project Structure
 
-In the output, you'll find options to open the app in a
+```
+app/
+  _layout.tsx               # Root layout (Stack navigator)
+  global.css                # Tailwind CSS imports
+  (tabs)/
+    _layout.tsx             # Bottom tab bar (Home, Search, Saved, Profile)
+    index.tsx               # Home tab — popular movies grid
+    search.tsx              # Search tab — movie search with trending
+    saved.tsx               # Saved tab — bookmarked movies
+    profile.tsx             # Profile tab — user info
+  movies/
+    [id].tsx                # Movie detail screen (dynamic route)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+components/
+  SearchBar.tsx             # Search input with icon
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+services/
+  api.ts                    # TMDB API calls (fetchMovies, fetchMovieDetails)
+  useFetch.ts               # Generic data-fetching hook with loading/error/refetch
 
-## Get a fresh project
+interfaces/
+  interfaces.d.ts           # Movie, MovieDetails, TrendingMovie types
 
-When you're ready, run:
+constants/
+  icons.ts                  # PNG icon barrel exports
+  images.ts                 # PNG image barrel exports
 
-```bash
-npm run reset-project
+assets/
+  icons/                    # PNG icons (arrow, home, logo, person, play, save, search, star)
+  images/                   # Background images (bg, highlight, logo, rankingGradient)
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Getting Started
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+Add your TMDB API key to the environment:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```env
+EXPO_PUBLIC_MOVIE_API_KEY=your_tmdb_bearer_token
+```
 
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npx expo start      # Start Expo dev server (scan QR with Expo Go)
+```
